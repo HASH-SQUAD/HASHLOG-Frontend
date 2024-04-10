@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Footer_Layout = styled.div `
     width: 100vw;
-    height: 50vh;
+    height: 54vh;
     background-color: black;
     color: white;
     padding: 5% 15% 5% 15%;
@@ -36,7 +36,7 @@ padding: 0.5% 0 0 0;
 export const Footer_PolicyText = styled.span `
     color: #FFF;
 font-family: Pretendard;
-font-size: 0.75rem;
+font-size: 0.7rem;
 font-style: normal;
 font-weight: 300;
 line-height: 140%; 
@@ -52,24 +52,27 @@ export const Footer_Line = styled.div `
 export const Footer_Address = styled.span `
     color: #FFF;
 font-family: Pretendard;
-font-size: 0.875rem;
+font-size: 0.78rem;
 font-style: normal;
 font-weight: 300;
-line-height: 140%; /* 1.225rem */
+    padding: 3% 0 0.14% 0;
 `
 
-export const Footer_InforText = styled.span `
+export const Footer_InfoText = styled.span `
     color: #FFF;
 font-family: Pretendard;
-font-size: 0.875rem;
+font-size: 0.78rem;
 font-style: normal;
 font-weight: 300;
-line-height: 140%; /* 1.225rem */
+line-height: 140%; 
 `
 
-export const Footer_WarningText = styled.span `
-
-`
 export const Footer_Copyright = styled.span `
-    
+    color:#fff;
+    font-family: Pretendard;
+    font-size: 0.78rem;
+    font-style: normal;
+    font-weight: 300;
+    padding: 5% 0 0 0;
+
 `
