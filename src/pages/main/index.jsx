@@ -3,6 +3,7 @@ import Header from "../../components/header/";
 import beaner from "../../assets/InstaSplitPoster.jpg";
 import Content from "../../components/content";
 import data from "../../data/contents";
+import Footer from "../../components/footer"
 import * as _ from "./style";
 
 const Main = () => {
@@ -20,6 +21,7 @@ const Main = () => {
           desc={item.desc}/>
           ))}
         </_.Main_Contents>
+        <Footer/>
     </div>
   )
       }
