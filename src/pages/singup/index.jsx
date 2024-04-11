@@ -1,6 +1,6 @@
 import React from 'react';
 import * as _ from './style';
-import Logo from '../../assets/img/Login_Logo.svg';
+import Logo from '../../assets/hashlogo.png';
 import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
