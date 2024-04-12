@@ -4,16 +4,18 @@ import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/header'
 import Write from './pages/write'
 import SignIn from './pages/singin';
+import SignUp from './pages/singup';
 
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Main/>}/>
         <Route path="/write" element={<Write/>}/>
-        <Route path="/main" element={<Main/>}/>
         <Route path='/singin' element={<SignIn/>}/>
-    </Routes>
+        <Route path='/singup' element={<SignUp/>}/>
+      </Routes>
     </BrowserRouter>
   );
 };

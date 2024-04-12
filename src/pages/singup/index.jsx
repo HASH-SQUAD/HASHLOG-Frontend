@@ -24,12 +24,10 @@ const SignUp = () => {
 				placeholder='닉네임을 입력해주세요'
 				type='text'
 			/>
-
 			<_.SigIn_Button>회원가입</_.SigIn_Button>
-
 			<_.SignIn_NO_Exist>
 				이미 회원이신가요?
-				<p onClick={() => history('/auth/signin')}>로그인</p>
+				<p onClick={() => history('/signin')}>로그인</p>
 			</_.SignIn_NO_Exist>
 		</_.SignIn_Container>
 	);

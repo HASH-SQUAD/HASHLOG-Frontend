@@ -11,8 +11,8 @@ export const SignIn_Container = styled.div`
 `;
 
 export const SiginIn_ID_Input = styled.input`
-	width: 37vw;
-	height: 7vh;
+	width: 378px;
+	height: 40px;
 	font-size: 14px;
 	font-family: 'Pretendard-Thin';
 	text-indent: 6px;
@@ -25,8 +25,8 @@ export const SiginIn_ID_Input = styled.input`
 `;
 
 export const SiginIn_PW_Input = styled.input`
-width: 37vw;
-	height: 7vh;
+	width: 378px;
+	height: 40px;
 	font-size: 14px;
 	font-family: 'Pretendard-Thin';
 	text-indent: 6px;
@@ -38,8 +38,8 @@ width: 37vw;
 `;
 
 export const SigIn_Button = styled.button`
-	width: 37vw;
-	height: 7vh;
+	width: 378px;
+	height: 40px;
   font-size: 1.1rem;
 	font-family: 'Pretendard';
 	background-color: black;
