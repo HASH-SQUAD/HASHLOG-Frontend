@@ -15,7 +15,7 @@ const SignIn = () => {
 
 			<_.SignIn_NO_Exist>
 				회원이 아니신가요?
-				<p onClick={() => history('/signup')}>회원가입</p>
+				<p onClick={() => history('/auth/signup')}>회원가입</p>
 			</_.SignIn_NO_Exist>
 		</_.SignIn_Container>
 	);

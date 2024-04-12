@@ -7,7 +7,7 @@ const SignUp = () => {
 	const history = useNavigate();
 	return (
 		<_.SignIn_Container>
-			<img src={Logo} width='120px' height='120px' alt='Logo' />
+			<img src={Logo} width='80px' height='auto' alt='Logo' />
 			<_.SiginIn_ID_Input
 				placeholder='아이디를 입력해주세요'
 				type='text'
@@ -27,7 +27,7 @@ const SignUp = () => {
 			<_.SigIn_Button>회원가입</_.SigIn_Button>
 			<_.SignIn_NO_Exist>
 				이미 회원이신가요?
-				<p onClick={() => history('/signin')}>로그인</p>
+				<p onClick={() =>history('/auth/signin')}>로그인</p>
 			</_.SignIn_NO_Exist>
 		</_.SignIn_Container>
 	);
