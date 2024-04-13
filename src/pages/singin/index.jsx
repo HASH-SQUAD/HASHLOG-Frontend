@@ -1,9 +1,11 @@
 import React from 'react';
 import * as _ from './style';
 import Logo from '../../assets/hashlogo.png';
+import { useNavigate } from 'react-router-dom';
   
 
 const SignIn = () => {
+	const navigate = useNavigate();
 	return (
 		<_.SignIn_Container>
 			<img src={Logo} style={{ width: "80px", height: "auto", borderRadius:'10px' }} alt='Logo' />
@@ -14,7 +16,7 @@ const SignIn = () => {
 
 			<_.SignIn_NO_Exist>
 				회원이 아니신가요?
-				<span >회원가입</span>
+				<span onClick={() => navigate('/auth/signup')}>회원가입</span>
 			</_.SignIn_NO_Exist>
 		</_.SignIn_Container>
 	);
