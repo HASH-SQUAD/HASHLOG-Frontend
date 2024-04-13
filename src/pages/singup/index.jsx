@@ -1,10 +1,8 @@
 import React from 'react';
 import * as _ from './style';
 import Logo from '../../assets/hashlogo.png';
-import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
-	const history = useNavigate();
 	return (
 		<_.SignIn_Container>
 			<img src={Logo} style={{ width: "80px", height: "auto", borderRadius:'10px' }} alt='Logo' />
@@ -27,7 +25,7 @@ const SignUp = () => {
 			<_.SigIn_Button>회원가입</_.SigIn_Button>
 			<_.SignIn_NO_Exist>
 				이미 회원이신가요?
-				<p onClick={() =>history('/auth/signin')}>로그인</p>
+				<span >로그인</span>
 			</_.SignIn_NO_Exist>
 		</_.SignIn_Container>
 	);

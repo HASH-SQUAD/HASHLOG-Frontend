@@ -76,7 +76,7 @@ export const SignIn_NO_Exist = styled.div`
 	font-family: 'Pretendard-Light';
 	margin-top: 10px;
 
-	p {
+	span {
 		font-size: 12px;
 		font-family: 'Pretendard-SemiBold';
 	}
