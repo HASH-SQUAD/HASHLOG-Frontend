@@ -6,55 +6,65 @@ export const SignIn_Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	margin-top: 24vh;
 	gap: 10px;
-	margin-bottom: 50vh;
 `;
 
 export const SiginIn_ID_Input = styled.input`
-	width: 400px;
-	height: 50px;
+	width: 378px;
+	height: 40px;
 	font-size: 14px;
 	font-family: 'Pretendard-Thin';
 	text-indent: 6px;
-	margin-bottom: 10px;
+  padding: 0 0 0 10px;
+  border-radius: 0.3125rem;
+  border: 1px solid #666;
+  margin-top: 15px;
 `;
 
 export const SiginIn_PW_Input = styled.input`
-	width: 400px;
-	height: 50px;
+	width: 378px;
+	height: 40px;
 	font-size: 14px;
 	font-family: 'Pretendard-Thin';
 	text-indent: 6px;
-	margin-bottom: 20px;
+	padding: 0 0 0 10px;
+  border-radius: 0.3125rem;
+  border: 1px solid #666;
 `;
 
 export const SiginIn_EMAIL_Input = styled.input`
-	width: 400px;
-	height: 50px;
+	width: 378px;
+	height: 40px;
 	font-size: 14px;
 	font-family: 'Pretendard-Thin';
-	text-indent: 6px;
-	margin-bottom: 20px;
+	text-indent: 6px;  
+	padding: 0 0 0 10px;
+  border-radius: 0.3125rem;
+  border: 1px solid #666;
 `;
 
 export const SiginIn_NICKNAME_Input = styled.input`
-	width: 400px;
-	height: 50px;
+	width: 378px;
+	height: 40px;
 	font-size: 14px;
 	font-family: 'Pretendard-Thin';
-	text-indent: 6px;
-	margin-bottom: 20px;
+	text-indent: 6px;  
+	padding: 0 0 0 10px;
+  border-radius: 0.3125rem;
+  border: 1px solid #666;
+	margin-bottom: 2px;
 `;
 
 export const SigIn_Button = styled.button`
-	width: 400px;
-	height: 50px;
-	font-size: 24px;
-	font-family: 'Pretendard-Bold';
+	width: 378px;
+	height: 40px;
+	font-size: 16px;
+	font-family: 'Pretendard';
 	background-color: black;
 	color: white;
 	cursor: pointer;
+  border-radius: 3px;
 `;
 
 export const SignIn_NO_Exist = styled.div`
@@ -64,6 +74,7 @@ export const SignIn_NO_Exist = styled.div`
 	cursor: pointer;
 	font-size: 12px;
 	font-family: 'Pretendard-Light';
+	margin-top: 10px;
 
 	p {
 		font-size: 12px;

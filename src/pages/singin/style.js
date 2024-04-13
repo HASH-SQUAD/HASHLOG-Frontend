@@ -7,7 +7,7 @@ export const SignIn_Container = styled.div`
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
-  padding: 25vh 0 0 0;
+  margin-top: 24vh;
 `;
 
 export const SiginIn_ID_Input = styled.input`
@@ -16,7 +16,6 @@ export const SiginIn_ID_Input = styled.input`
 	font-size: 14px;
 	font-family: 'Pretendard-Thin';
 	text-indent: 6px;
-	margin-bottom: 4px;
   margin-top: 15px;
   border-style: none;
   padding: 0 0 0 10px;
@@ -30,8 +29,6 @@ export const SiginIn_PW_Input = styled.input`
 	font-size: 14px;
 	font-family: 'Pretendard-Thin';
 	text-indent: 6px;
-	margin-bottom: 2px;
-  border-style: none;
   padding: 0 0 0 10px;
   border-radius: 0.3125rem;
   border: 1px solid #666;
@@ -40,7 +37,7 @@ export const SiginIn_PW_Input = styled.input`
 export const SigIn_Button = styled.button`
 	width: 378px;
 	height: 40px;
-  font-size: 1.1rem;
+  font-size: 16px;
 	font-family: 'Pretendard';
 	background-color: black;
   border-radius: 3px;
