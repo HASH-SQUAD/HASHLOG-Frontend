@@ -10,6 +10,22 @@ export const Write_Line = styled.div `
   border-bottom: 1.5px solid #eeeeee;;
 `
 
-export const Write_Title = styled.input `
+export const Write_Write = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100%;
+  float: left;
+`;
 
+
+export const Write_TitleInput = styled.input `
+  width: 35vw;
+
+`
+export const Write_View = styled.div`
+  width: 50vw;
+  background-color: #F5F5F5;
+  float: right;
 `

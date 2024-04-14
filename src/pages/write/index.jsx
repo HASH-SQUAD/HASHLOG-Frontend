@@ -8,10 +8,15 @@ const Write = () => {
 
   return (
     <>
+      <ReactQuill />
         <Header userName={userName} />
         <_.Write_Layout>
             <_.Write_Line/>
-      </_.Write_Layout>
+            <_.Write_Write>
+            <_.Write_TitleInput placeholder="제목을 입력하세요" />
+
+            </_.Write_Write>
+        </_.Write_Layout>
     </>
   );
 };
