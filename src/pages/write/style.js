@@ -17,11 +17,16 @@ export const Write_Write = styled.div`
   width: 50vw;
   height: 100%;
   float: left;
+  flex-direction: column;
 `;
 
 
 export const Write_TitleInput = styled.input `
   width: 35vw;
+  border-style: none;
+  outline: none;
+  padding: 30px;
+  font-size: 54px;
 
 `
 export const Write_View = styled.div`
