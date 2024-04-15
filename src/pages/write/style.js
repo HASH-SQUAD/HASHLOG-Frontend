@@ -21,12 +21,14 @@ export const Write_Write = styled.div`
 `;
 
 
-export const Write_TitleInput = styled.input `
-  width: 35vw;
+export const Write_TitleInput = styled.textarea `
+  width: 90%;
   border-style: none;
   outline: none;
-  padding: 30px;
-  font-size: 54px;
+  padding: 30px 0 20px 20px;
+  font-size: 3rem;
+  resize: none;
+  word-spacing:-20px;
 
 `
 export const Write_View = styled.div`

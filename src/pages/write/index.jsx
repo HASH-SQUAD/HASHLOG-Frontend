@@ -52,7 +52,6 @@ const Write = () => {
       ],
     },
   };
-
   return (
     <>
         <Header userName={userName} />
@@ -61,7 +60,7 @@ const Write = () => {
             <_.Write_Write>
             <_.Write_TitleInput
             type="text"
-            value={title} maxLength='10'
+            value={title} maxLength='50'
             onChange={handleTitleChange}
             placeholder="제목을 입력하세요"
           />
