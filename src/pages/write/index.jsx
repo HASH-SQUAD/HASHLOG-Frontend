@@ -61,7 +61,7 @@ const Write = () => {
             <_.Write_Write>
             <_.Write_TitleInput
             type="text"
-            value={title}
+            value={title} maxLength='10'
             onChange={handleTitleChange}
             placeholder="제목을 입력하세요"
           />
