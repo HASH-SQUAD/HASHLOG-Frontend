@@ -39,9 +39,16 @@ export const Write_View = styled.div`
   float: right;
 `;
 
-export const Write_footer = styled.div`
+export const Write_FooterLayout = styled.div `
   width: 100%;
-  height: 10%;
+  height: 100vh;
+`
+
+export const Write_footer = styled.div`
+  width: 50%;
+  height: 80px;
   box-shadow: #d9d9d9 0px 0px 8px 0;
-  bottom: 0;
+  bottom: 0px;
+  position: fixed;
+  z-index: 5;
 `;

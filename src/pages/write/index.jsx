@@ -58,7 +58,7 @@ const Write = () => {
   return (
     <>
       <Header userName={userName} />
-        <_.Write_Line />
+      <_.Write_Line />
       <_.Write_Layout>
         <_.Write_Write>
           <_.Write_TitleInput
@@ -67,16 +67,16 @@ const Write = () => {
             maxLength="50"
             onChange={handleTitleChange}
             placeholder="제목을 입력하세요"
-            />
+          />
           <ReactQuill
-            style={{ width: "100%", height: "100%" }}
+            style={{ width: "100%", height: "calc(100% - 100px)" }}
             modules={modules}
-            />
+          />
+          <_.Write_FooterLayout>
             <_.Write_footer></_.Write_footer>
+          </_.Write_FooterLayout>
         </_.Write_Write>
-        <_.Write_View>
-          
-        </_.Write_View>
+        <_.Write_View></_.Write_View>
       </_.Write_Layout>
     </>
   );
