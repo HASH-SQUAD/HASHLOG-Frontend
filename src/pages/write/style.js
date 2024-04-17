@@ -30,7 +30,7 @@ export const Write_TitleInput = styled.textarea`
   padding: 30px 0 0 20px;
   font-size: 3rem;
   resize: none;
-  word-spacing: -20px;
+  font-family: 'Pretendard-semibold';
 `;
 
 export const Write_TitleLine = styled.div`
@@ -85,7 +85,10 @@ export const Write_ViewTitle = styled.div `
   padding: 30px 0 0 30px;
   font-size: 3rem;
   resize: none;
+  font-family: 'Pretendard-semibold';
 `
 
 export const Write_ViewContent = styled.div `
+  width: 90%;
+  padding: 30px 0 0 30px;
 `
