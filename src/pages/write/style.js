@@ -82,7 +82,7 @@ export const Write_ViewTitle = styled.div `
   width: 90%;
   border-style: none;
   outline: none;
-  padding: 30px 0 0 30px;
+  padding: 30px 30px 0 30px;
   font-size: 3rem;
   resize: none;
   font-family: 'Pretendard-semibold';
@@ -90,5 +90,7 @@ export const Write_ViewTitle = styled.div `
 
 export const Write_ViewContent = styled.div `
   width: 90%;
-  padding: 30px 0 0 30px;
+  word-wrap: break-word;
+  text-align: start;
+  padding: 30px 30px 0 30px;
 `
