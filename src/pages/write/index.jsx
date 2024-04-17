@@ -88,7 +88,7 @@ const formats = [
         </_.Write_Write>
         <_.Write_View>
           <_.Write_ViewTitle>
-            
+            {title}
           </_.Write_ViewTitle>
         <_.Write_ViewContent dangerouslySetInnerHTML={{__html: content}}></_.Write_ViewContent>
           {content}

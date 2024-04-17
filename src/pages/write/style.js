@@ -40,10 +40,14 @@ export const Write_TitleLine = styled.div`
 `
 
 export const Write_View = styled.div`
-  width: 50%;
-  height: 100%;
   background-color: #f5f5f5;
   float: right;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  float: left;
+  flex-direction: column;
 `;
 
 export const Write_FooterLayout = styled.div `
@@ -75,7 +79,12 @@ export const Write_WriteButton = styled.button`
 
 `
 export const Write_ViewTitle = styled.div `
-
+  width: 90%;
+  border-style: none;
+  outline: none;
+  padding: 30px 0 0 30px;
+  font-size: 3rem;
+  resize: none;
 `
 
 export const Write_ViewContent = styled.div `
