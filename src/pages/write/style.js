@@ -48,6 +48,7 @@ export const Write_View = styled.div`
   height: 100%;
   float: left;
   flex-direction: column;
+  justify-content: flex-start;
 
 `;
 
@@ -83,7 +84,7 @@ export const Write_ViewTitle = styled.div `
   width: 90%;
   border-style: none;
   outline: none;
-  padding: 30px 30px 0 20px;
+  padding: 30px 30px 0 30px;
   font-size: 3rem;
   resize: none;
   font-family: 'Pretendard-semibold';
@@ -97,7 +98,27 @@ export const Write_ViewContent = styled.div `
   padding: 30px 30px 0 30px;
   line-height: 20px;
   h1 {
-    margin-bottom:10px;
+    margin-top: 6px;
+    margin-bottom:6px;
+    line-height: 50px;
+    font-size: 2.5rem;
+  }
+  h2 {
+    margin-top: 6px;
+    margin-bottom:8px;
     line-height: 35px;
+    font-size: 2rem;
+  }
+  h3 {
+    margin-top: 6px;
+    margin-bottom:8px;
+    line-height: 25px;
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1.25rem;
   }
 `
