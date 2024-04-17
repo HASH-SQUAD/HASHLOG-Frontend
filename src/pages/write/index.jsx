@@ -73,7 +73,13 @@ const Write = () => {
             modules={modules}
           />
           <_.Write_FooterLayout>
-            <_.Write_footer></_.Write_footer>
+            <_.Write_Footer>
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 56 56" fill="none">
+  <path d="M34.4029 13.761L20.6416 27.5223L34.4029 41.2835" stroke="#33363F" stroke-width="4.58709"/>
+</svg>
+<_.Write_WriteButton>글쓰기</_.Write_WriteButton>
+
+            </_.Write_Footer>
           </_.Write_FooterLayout>
         </_.Write_Write>
         <_.Write_View></_.Write_View>

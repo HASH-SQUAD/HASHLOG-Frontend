@@ -44,11 +44,21 @@ export const Write_FooterLayout = styled.div `
   height: 100vh;
 `
 
-export const Write_footer = styled.div`
+export const Write_Footer = styled.div`
   width: 50%;
   height: 80px;
   box-shadow: #d9d9d9 0px 0px 8px 0;
   bottom: 0px;
   position: fixed;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+  padding: 0 0 0 20px;
+   
 `;
+
+export const Write_WriteButton = styled.button`
+display: inline-flex;
+  align-content: flex-end;
+`
