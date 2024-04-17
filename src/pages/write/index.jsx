@@ -86,7 +86,13 @@ const formats = [
             </_.Write_Footer>
           </_.Write_FooterLayout>
         </_.Write_Write>
-        <_.Write_View></_.Write_View>
+        <_.Write_View>
+          <_.Write_ViewTitle>
+            
+          </_.Write_ViewTitle>
+        <_.Write_ViewContent dangerouslySetInnerHTML={{__html: content}}></_.Write_ViewContent>
+          {content}
+        </_.Write_View>
       </_.Write_Layout>
     </>
   );

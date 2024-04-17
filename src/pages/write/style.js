@@ -27,7 +27,7 @@ export const Write_TitleInput = styled.textarea`
   width: 90%;
   border-style: none;
   outline: none;
-  padding: 30px 0 20px 20px;
+  padding: 30px 0 0 20px;
   font-size: 3rem;
   resize: none;
   word-spacing: -20px;
@@ -36,12 +36,13 @@ export const Write_TitleInput = styled.textarea`
 export const Write_TitleLine = styled.div`
   width: 100%;
   border-bottom: 1.5px solid #eeeeee;
+  border-top: 20px solid #fff;
 `
 
 export const Write_View = styled.div`
   width: 50%;
   height: 100%;
-  background-color: #f5f5;
+  background-color: #f5f5f5;
   float: right;
 `;
 
@@ -72,4 +73,10 @@ export const Write_WriteButton = styled.button`
   border-radius: 5px;
   border-style: none;
 
+`
+export const Write_ViewTitle = styled.div `
+
+`
+
+export const Write_ViewContent = styled.div `
 `
