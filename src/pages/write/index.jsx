@@ -9,8 +9,7 @@ const Write = () => {
     return (
         <>
         <Header userName={userName} />
-        
-        
+      
         </>
     );
 };
