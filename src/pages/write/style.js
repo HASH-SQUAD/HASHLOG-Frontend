@@ -32,6 +32,12 @@ export const Write_TitleInput = styled.textarea`
   resize: none;
   word-spacing: -20px;
 `;
+
+export const Write_TitleLine = styled.div`
+  width: 100%;
+  border-bottom: 1.5px solid #eeeeee;
+`
+
 export const Write_View = styled.div`
   width: 50%;
   height: 100%;
@@ -41,14 +47,29 @@ export const Write_View = styled.div`
 
 export const Write_FooterLayout = styled.div `
   width: 100%;
-  height: 100vh;
+  height: 100px;
 `
 
-export const Write_footer = styled.div`
+export const Write_Footer = styled.div`
   width: 50%;
   height: 80px;
   box-shadow: #d9d9d9 0px 0px 8px 0;
   bottom: 0px;
   position: fixed;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
 `;
+
+export const Write_WriteButton = styled.button`
+  width: 4.8vw;
+  height: 4.2vh;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  border-style: none;
+
+`
