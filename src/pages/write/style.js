@@ -48,6 +48,7 @@ export const Write_View = styled.div`
   height: 100%;
   float: left;
   flex-direction: column;
+
 `;
 
 export const Write_FooterLayout = styled.div `
@@ -82,15 +83,21 @@ export const Write_ViewTitle = styled.div `
   width: 90%;
   border-style: none;
   outline: none;
-  padding: 30px 30px 0 30px;
+  padding: 30px 30px 0 20px;
   font-size: 3rem;
   resize: none;
   font-family: 'Pretendard-semibold';
 `
 
 export const Write_ViewContent = styled.div `
+  font-family: 'Pretendard';
   width: 90%;
   word-wrap: break-word;
   text-align: start;
   padding: 30px 30px 0 30px;
+  line-height: 20px;
+  h1 {
+    margin-bottom:10px;
+    line-height: 35px;
+  }
 `
