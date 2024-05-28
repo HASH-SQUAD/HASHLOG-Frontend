@@ -8,7 +8,7 @@ const Header = ({userName}) => {
   const navigate = useNavigate()
   return (
     <_.Header_Container>
-      <h1>#</h1>
+      <Link to="/"><h1>#</h1></Link>
       {isLogined ? (
         userName ? (
           <_.Header_button>{userName}</_.Header_button>
