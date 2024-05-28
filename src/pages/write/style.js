@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 export const Write_Layout = styled.div`
@@ -121,4 +122,3 @@ export const Write_ViewContent = styled.div `
   p {
     font-size: 1.25rem;
   }
-`

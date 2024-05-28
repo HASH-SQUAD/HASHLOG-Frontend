@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+
 import Header from "../../components/header";
 import { useState } from "react";
 import * as _ from "./style.js";
@@ -81,8 +81,7 @@ const formats = [
           />
           <_.Write_FooterLayout>
             <_.Write_Footer>
-            <img src={back}/>
-  <_.Write_WriteButton>업로드</_.Write_WriteButton>
+
             </_.Write_Footer>
           </_.Write_FooterLayout>
         </_.Write_Write>
