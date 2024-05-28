@@ -1,5 +1,6 @@
 import React from 'react';
 import Main from './pages/main';
+
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Write from './pages/write'
 import SignIn from './pages/singin';
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='*' element={<Main/>}/>
       </Routes>
     </BrowserRouter>
+
   );
 };
 
