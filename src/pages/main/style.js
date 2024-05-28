@@ -11,4 +11,3 @@ export const Main_Contents = styled.div`
     padding-top:1.5vh;
     justify-items: center;
 `
-

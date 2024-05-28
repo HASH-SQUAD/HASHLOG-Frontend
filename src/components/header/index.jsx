@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import * as _ from "./style";
 
-const Header = () => {
+import { Link, useNavigate } from "react-router-dom";
+
+const Header = ({userName}) => {
   const [isLogined, setIsLogined] = useState(false);
+  const navigate = useNavigate()
   return (
     <_.Header_Container>
       <h1>#</h1>
-      {isLogined ? <_.Header_button>글쓰기</_.Header_button> : <></>}
-    </_.Header_Container>
-  );
-};
+      {isLogined ? (
+        userName ? (
+          <_.Header_button>{userName}</_.Header_button>
+        ) : (
+          <_.Header_button><Link to="/write">글쓰기</Link></_.Header_button>
+        )
+      ) : 
+        <_.Header_button backgroundColor="#fff" color="#696969" onClick={() => navigate('/auth/signin')}>
+          로그인</_.Header_button>
+        }
+      </_.Header_Container>
 
 export default Header;

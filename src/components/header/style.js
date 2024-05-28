@@ -18,18 +18,21 @@ export const Header_Container = styled.div`
     }
 `
 
-
-
 export const Header_button = styled.button`
     width: 4.8vw;
     height: 4.2vh;
-    background-color: #000;
+    background-color: ${(props) => props.backgroundColor || '#000'};;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     border-style: none;
-    color: #fff;
+    color: ${(props)=> props.color || '#fff'};
+`
 
-
-
+export const Header_Login = styled.button `
+    width: 4.8vw;
+    height: 4.2vh;
+    color: #696969;
+    background-color: transparent;
+    border-style: none;
 `
