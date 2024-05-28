@@ -1,61 +1,63 @@
 
-import React from "react";
 import Header from "../../components/header";
 import { useState } from "react";
-import * as _ from "./style";
+import * as _ from "./style.js";
 import "./style.css";
 import ReactQuill from "react-quill";
+import back from '../../assets/back.svg'
 
 const Write = () => {
   const [userName, setUserName] = useState("강민지님");
   const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
   const handleTitleChange = (e) => {
     setTitle(e.currentTarget.value);
   };
-  const formats = [
-    "font",
-    "header",
-    "bold",
-    "italic",
-    "underline",
-    "strike",
-    "blockquote",
-    "list",
-    "bullet",
-    "indent",
-    "link",
-    "align",
-    "color",
-    "background",
-    "size",
-    "h1",
-  ];
-  const modules = {
-    toolbar: {
-      container: [
-        ["image"],
-        [{ header: [1, 2, 3, 4, 5, false] }],
-        [
-          "font",
-          "header",
-          "bold",
-          "italic",
-          "underline",
-          "strike",
-          "blockquote",
-          "list",
-          "bullet",
-          "indent",
-          "link",
-          "align",
-          "color",
-          "background",
-          "size",
-          "h1",
-        ],
-      ],
-    },
+  const handleContentChange = (e) => {
+    setContent(e);
   };
+  
+  const modules = useMemo(() => {
+    return {
+        toolbar: {
+            container: [
+                [
+                    { header: '1' },
+                    { header: '2' },
+                    { header: '3' },
+                    { header: '4' },
+                ],
+                [
+                    'bold',
+                    'italic',
+                    'underline',
+                    'strike',
+                    'blockquote',
+                    'code-block',
+                ],
+                [{ list: 'ordered' }, { list: 'bullet' }],
+                ['link', 'image'],
+                ['clean'],
+            ],
+
+        },
+    };
+}, []);
+
+const formats = [
+    'header',
+    'bold',
+    'italic',
+    'underline',
+    'strike',
+    'blockquote',
+    'code-block',
+    'image',
+    'link',
+    'ordered',
+    'bullet',
+];
+
   return (
     <>
       <Header userName={userName} />
@@ -69,21 +71,26 @@ const Write = () => {
             onChange={handleTitleChange}
             placeholder="제목을 입력하세요"
           />
+          <_.Write_TitleLine/>
           <ReactQuill
             style={{ width: "100%", height: "calc(100% - 100px)" }}
             modules={modules}
+            formats={formats}
+            onChange={handleContentChange}
+            value={content}
           />
           <_.Write_FooterLayout>
             <_.Write_Footer>
-            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 56 56" fill="none">
-  <path d="M34.4029 13.761L20.6416 27.5223L34.4029 41.2835" stroke="#33363F" stroke-width="4.58709"/>
-</svg>
-<_.Write_WriteButton>글쓰기</_.Write_WriteButton>
 
             </_.Write_Footer>
           </_.Write_FooterLayout>
         </_.Write_Write>
-        <_.Write_View></_.Write_View>
+        <_.Write_View>
+          <_.Write_ViewTitle>
+            {title}
+          </_.Write_ViewTitle>
+        <_.Write_ViewContent dangerouslySetInnerHTML={{__html: content}}></_.Write_ViewContent>
+        </_.Write_View>
       </_.Write_Layout>
     </>
   );
