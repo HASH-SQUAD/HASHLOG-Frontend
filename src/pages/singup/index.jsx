@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import * as _ from './style';
 import Logo from '../../assets/hashlogo.png';
 import axios from 'axios';
@@ -13,9 +13,8 @@ const SignUp = () => {
 	const [userName,setUserName] = useState("");
 
 	const onSubmit = () => {
-		useEffect(()=> {
 			axios.get(
-				"http://10.150.150.193:3000",	{
+				"http://10.150.150.193:3000/auth/signup",	{
 					"userid": userId,
 					"password": userPassword,
 					"email": userEmail,
@@ -31,7 +30,6 @@ const SignUp = () => {
 					console.log(err);
 				}
 			)
-		})
 	}
 
 
