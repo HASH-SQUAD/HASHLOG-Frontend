@@ -1,10 +1,10 @@
-import React, { useState, useNvigate } from "react";
+import React, { useState } from "react";
 import * as _ from "./style";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({userName}) => {
   const [isLogined, setIsLogined] = useState(false);
-  const history = useNvigate()
+  const history = useNavigate()
   return (
     <_.Header_Container>
       <h1>#</h1>
