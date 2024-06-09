@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as _ from './style';
 import Logo from '../../assets/hashlogo.png';
-  
+import axios from 'axios';
 
 const SignIn = () => {
+	const [userId,setUserID] = useState("");
+	const [userPassword,setUserPassword] = useState("");
+
 	return (
 		<_.SignIn_Container>
 			<img src={Logo} style={{ width: "80px", height: "auto", borderRadius:'10px' }} alt='Logo' />
