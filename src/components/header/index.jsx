@@ -1,23 +1,34 @@
+// Header.js
 import React, { useState } from "react";
 import * as _ from "./style";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Header = ({userName}) => {
+const Header = () => {
   const [isLogined, setIsLogined] = useState(false);
-  const history = useNavigate()
+  const navigate = useNavigate();
+
   return (
     <_.Header_Container>
-      <h1>#</h1>
+      <_.StyledRouterLink to="/">
+        <h1>#</h1>
+      </_.StyledRouterLink>
       {isLogined ? (
-        userName ? (
-          <_.Header_button>{userName}</_.Header_button>
-        ) : (
-          <_.Header_button><Link to="/write">글쓰기</Link></_.Header_button>
-        )
+        <_.Header_button>유저내임드드</_.Header_button>
       ) : (
-        <_.Header_button backgroundColor="#fff" color="#696969"><Link to="/auth/singin">로그인</Link></_.Header_button>
+        <_.Header_button
+          backgroundColor="#fff"
+          color="#696969"
+          onClick={() => navigate("/auth/signin")}
+        >
+          로그인
+        </_.Header_button>
       )}
-      </_.Header_Container>
+      {isLogined && (
+        <_.Header_button>
+          <_.StyledRouterLink to="/write">글쓰기</_.StyledRouterLink>
+        </_.Header_button>
+      )}
+    </_.Header_Container>
   );
 };
 
