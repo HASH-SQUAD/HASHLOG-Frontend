@@ -9,7 +9,7 @@ export const Post_Layout = styled.div `
 `
 
 export const Post_Title = styled.div `
-  margin-top: 8%;
+  margin-top: 5%;
   color: #12182B;
   font-size: 2.5rem;
   font-weight: 600;
@@ -26,8 +26,8 @@ export const Post_Meta = styled.div`
 
 
 export const Post_Tag = styled.div`
-  padding: 0.8% 0%;
-  width: 6.5%;
+  padding: 0.6% 0%;
+  width: 4.8%;
   font-size: 1rem;
   text-align: center;
   color: #7A7D85;

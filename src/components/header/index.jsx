@@ -25,7 +25,9 @@ const Header = ({ userName }) => {
 
   return (
     <_.Header_Container>
-      <h1>#</h1>
+      <h1 onClick={()=>{
+        history('/');
+      }}>#</h1>
       {data ? (
         <>
           <_.Header_button>{data?.data.nickname}</_.Header_button>
