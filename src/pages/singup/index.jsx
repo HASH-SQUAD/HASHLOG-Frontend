@@ -34,8 +34,6 @@ const SignUp = () => {
 				}
 			)
 	}
-	
-
 
 	return (
 		<_.SignIn_Container>
