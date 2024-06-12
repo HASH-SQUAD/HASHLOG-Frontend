@@ -14,7 +14,6 @@ export const Write_Line = styled.div`
 `;
 
 export const Write_Write = styled.div`
-  /* overflow: scroll; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +31,7 @@ export const Write_TitleInput = styled.textarea`
   font-size: 3rem;
   resize: none;
   font-family: 'Pretendard-semibold';
+  
 `;
 
 export const Write_TitleLine = styled.div`

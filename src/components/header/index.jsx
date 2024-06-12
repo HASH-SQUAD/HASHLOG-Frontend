@@ -25,7 +25,7 @@ const Header = ({ userName }) => {
 
   return (
     <_.Header_Container>
-      <h1 onClick={()=>{
+      <h1 style={{userSelect : "none"}} onClick={()=>{
         history('/');
       }}>#</h1>
       {data ? (

@@ -35,10 +35,9 @@ const SignUp = () => {
 			)
 	}
 
-	const navigate = useNavigate();
 	return (
 		<_.SignIn_Container>
-			<img src={Logo} style={{ width: "80px", height: "auto", borderRadius:'10px' }} alt='Logo' />
+			<img src={Logo} style={{ width: "80px", height: "auto", borderRadius:'10px',userSelect: 'none' }} alt='Logo' />
 			<_.SiginIn_ID_Input
 				placeholder='아이디를 입력해주세요'
 				type='text'

@@ -31,7 +31,7 @@ const SignIn = () => {
     <_.SignIn_Container>
       <img
         src={Logo}
-        style={{ width: "80px", height: "auto", borderRadius: "10px" }}
+        style={{ width: "80px", height: "auto", borderRadius: "10px", userSelect: 'none' }}
         alt="Logo"
       />
       <_.SiginIn_ID_Input
