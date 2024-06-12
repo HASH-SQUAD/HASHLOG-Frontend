@@ -3,7 +3,6 @@ import * as _ from './style';
 import Logo from '../../assets/hashlogo.png';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
 	const history = useNavigate();
