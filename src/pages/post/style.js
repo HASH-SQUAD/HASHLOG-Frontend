@@ -82,31 +82,42 @@ export const Post_Title_Line = styled.div `
     align-items: center;
     border-radius: 15px;
     background: #000;
-    width: 12vw;
+    width: 10vw;
     height: 7vh;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #fff;  
     gap: 2px;
     margin-top: 50px;
-  `
+    `
   export const Post_Share_Icon = styled.img `
     background: #000;
     width: 26px;
-  `
+    `
 
-  export const Post_Share_Success_Icon = styled.img `
-  
-  `
+export const Post_Share_Success_Icon = styled.img `
+  width: 28px;
+`
 
-  export const Post_Share_Success = styled.button `
-    background: #FFF;
-    width: 20vw;
-    height: 8vh;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px 1px #D9D9D9;
-    
-  `
 
+export const Post_Share_Success = styled.div `
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  width: 20vw;
+  height: 8vh;
+  font-size: 1.125rem;
+  border-radius: 15px;
+  border-style: none;
+  box-shadow: 0px 0px 20px 0px #D9D9D9;
+  padding:1% 1% 1% 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.95;
+  gap: 10px;
+`
 
 
 
