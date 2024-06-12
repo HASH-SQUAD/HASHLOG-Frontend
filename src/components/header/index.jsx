@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import * as _ from "./style";
+
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({userName}) => {
@@ -19,7 +20,5 @@ const Header = ({userName}) => {
           로그인</_.Header_button>
         }
       </_.Header_Container>
-  );
-};
 
 export default Header;
