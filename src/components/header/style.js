@@ -1,4 +1,6 @@
-import styled from 'styled-components'
+// style.js
+import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 export const Header_Container = styled.div`
     width: 100vw;
@@ -16,7 +18,7 @@ export const Header_Container = styled.div`
         font-style: normal;
         font-weight: 900;
     }
-`
+`;
 
 export const Header_button = styled.button`
     width: 4.8vw;
@@ -27,12 +29,10 @@ export const Header_button = styled.button`
     border-radius: 5px;
     border-style: none;
     color: ${(props)=> props.color || '#fff'};
-`
+`;
 
-export const Header_Login = styled.button `
-    width: 4.8vw;
-    height: 4.2vh;
-    color: #696969;
-    background-color: transparent;
-    border-style: none;
-`
+export const StyledRouterLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+`;
+

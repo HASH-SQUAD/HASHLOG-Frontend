@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import * as _ from './style';
-import Logo from '../../assets/hashlogo.png';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import * as _ from "./style";
+import Logo from "../../assets/hashlogo.png";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const history = useNavigate();
@@ -12,13 +12,16 @@ const SignIn = () => {
 
   const onSubmit = () => {
     axios
-      .get("http://10.150.150.193:3000/auth/signin", {
+      .post("http://10.150.150.193:3000/auth/signin", {
         userid: userId,
         password: userPassword,
       })
       .then((res) => {
-        console.log(res);
+        localStorage.setItem("accessToken", res.data.accessToken);
+        localStorage.setItem("refreshToken", res.data.refreshToken);
+        alert(res.data.message);
         history("/");
+        window.location.reload();
       })
       .catch((err) => {
         console.log(err);
@@ -50,7 +53,13 @@ const SignIn = () => {
 
       <_.SignIn_NO_Exist>
         회원이 아니신가요?
-        <span>회원가입</span>
+        <span
+          onClick={() => {
+            history("/auth/signup");
+          }}
+        >
+          회원가입
+        </span>
       </_.SignIn_NO_Exist>
     </_.SignIn_Container>
   );
