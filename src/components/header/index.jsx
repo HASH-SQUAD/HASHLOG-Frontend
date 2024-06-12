@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import React, { useState } from "react";
 import * as _ from "./style";
-
+import { Link, useNavigate } from "react-router-dom";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({userName}) => {
   const [isLogined, setIsLogined] = useState(false);
-  const navigate = useNavigate()
+  const history = useNavigate()
   return (
     <_.Header_Container>
       <Link to="/"><h1>#</h1></Link>
@@ -20,5 +21,7 @@ const Header = ({userName}) => {
           로그인</_.Header_button>
         }
       </_.Header_Container>
+  );
+};
 
 export default Header;

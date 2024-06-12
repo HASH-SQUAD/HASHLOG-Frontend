@@ -13,7 +13,7 @@ const Main = () => {
       <img
         src={beaner}
         alt="Beaner"
-        style={{ width: "100%", height: "auto" }}
+        style={{ width:"100%", height: "auto" }}
       />
         <_.Main_Contents>
         {data.map((item) => (
