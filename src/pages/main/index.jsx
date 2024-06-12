@@ -12,18 +12,20 @@ const Main = () => {
   return (
     <div>       
       <Header />
+      <_.Main_Layout>
       <img
         src={beaner}
         alt="Beaner"
         style={{ width: "100%", height: "auto" }}
       />
-      <_.Main_write_button onClick={() => {history('/write')}}>글쓰기</_.Main_write_button>
+      <_.Main_Write_Button onClick={() => {history('/write')}}>글쓰기</_.Main_Write_Button>
         <_.Main_Contents>
         {data.map((item) => (
           <Content img={item.imgURL} date={item.date} title={item.title}
           desc={item.desc}/>
           ))}
         </_.Main_Contents>
+      </_.Main_Layout>
         <Footer/>
     </div>
   )

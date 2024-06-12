@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+export const Main_Layout = styled.div`
+    width: 100%;
+    margin-bottom: 100px;
+`
+
 export const Main_Contents = styled.div`
     display: grid;
     width: 74vw;
@@ -11,7 +16,7 @@ export const Main_Contents = styled.div`
     padding-top:1.5vh;
     justify-items: center;
 `
-export const Main_write_button = styled.div `
+export const Main_Write_Button = styled.div `
     width: 5.2vw;
     height: 4.2vh;
     background-color: #000;
@@ -23,6 +28,7 @@ export const Main_write_button = styled.div `
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 1% 0 0 81%;
+    margin: 1% 0 0 81.5%;
     `
+
 
