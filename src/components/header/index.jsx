@@ -30,10 +30,6 @@ const Header = ({ userName }) => {
         <>
           <_.Header_button>{data?.data.nickname}</_.Header_button>
 
-          <_.Header_button>
-            <Link to="/write">글쓰기</Link>
-          </_.Header_button>
-
           <_.Header_button
             onClick={() => {
               localStorage.removeItem("accessToken");

@@ -11,3 +11,18 @@ export const Main_Contents = styled.div`
     padding-top:1.5vh;
     justify-items: center;
 `
+export const Main_write_button = styled.div `
+    width: 5.2vw;
+    height: 4.2vh;
+    background-color: #000;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-size: 14px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1% 0 0 81%;
+    `
+
