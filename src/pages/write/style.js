@@ -47,6 +47,7 @@ export const Write_View = styled.div`
   align-items: center;
   width: 50%;
   height: 100%;
+  overflow: auto;
   float: left;
   flex-direction: column;
   justify-content: flex-start;
@@ -122,3 +123,4 @@ export const Write_ViewContent = styled.div `
   p {
     font-size: 1.25rem;
   }
+`
