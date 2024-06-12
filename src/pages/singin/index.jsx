@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import * as _ from './style';
 import Logo from '../../assets/hashlogo.png';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+  
 
 const SignIn = () => {
 	const [userId,setUserID] = useState("");
@@ -17,7 +19,7 @@ const SignIn = () => {
 
 			<_.SignIn_NO_Exist>
 				회원이 아니신가요?
-				<span >회원가입</span>
+				<span onClick={() => navigate('/auth/signup')}>회원가입</span>
 			</_.SignIn_NO_Exist>
 		</_.SignIn_Container>
 	);

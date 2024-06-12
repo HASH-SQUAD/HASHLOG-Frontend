@@ -3,6 +3,7 @@ import * as _ from './style';
 import Logo from '../../assets/hashlogo.png';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
 	const history = useNavigate();
@@ -35,6 +36,7 @@ const SignUp = () => {
 			)
 	}
 
+	const navigate = useNavigate();
 	return (
 		<_.SignIn_Container>
 			<img src={Logo} style={{ width: "80px", height: "auto", borderRadius:'10px' }} alt='Logo' />
@@ -62,7 +64,7 @@ const SignUp = () => {
 			<_.SignIn_NO_Exist>
 				이미 회원이신가요?
 				<span onClick={() => {
-					history('/signin')
+					history('/auth/signin');
 				}}>로그인</span>
 			</_.SignIn_NO_Exist>
 		</_.SignIn_Container>
