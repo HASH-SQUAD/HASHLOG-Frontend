@@ -26,9 +26,9 @@ export const Post_Meta = styled.div`
 
 
 export const Post_Tag = styled.div`
-  padding: 0.75% 1.25%;
+  padding: 0.8% 0%;
   width: 6.5%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   color: #7A7D85;
   background-color: #eee;
@@ -40,7 +40,7 @@ export const Post_Tag = styled.div`
 
 export const Post_Date = styled.div `
   color: #7A7D85;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-left: 5px;
 `
 export const Post_Title_Line = styled.div `
@@ -55,8 +55,8 @@ export const Post_Title_Line = styled.div `
   `
     
       export const Post_Img = styled.img `
-      width: 80%;
-      height: 300px;
+      width: 50vw;
+      height: 50vh;
       margin-top: 4%;
       border-radius: 20px;
       display: block;
@@ -77,13 +77,13 @@ export const Post_Title_Line = styled.div `
   `
   export const Post_Share_Button = styled.button `
     display: flex;
-    padding: 10px;
+    padding:1% 1% 1% 1%;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     background: #000;
-    width: 14vw;
-    height: 8vh;
+    width: 12vw;
+    height: 7vh;
     font-size: 18px;
     color: #fff;  
     gap: 2px;
@@ -93,10 +93,18 @@ export const Post_Title_Line = styled.div `
     background: #000;
     width: 26px;
   `
-  export const Post_Share_Success = styled.img `
+
+  export const Post_Share_Success_Icon = styled.img `
+  
+  `
+
+  export const Post_Share_Success = styled.button `
     background: #FFF;
     width: 20vw;
     height: 8vh;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 1px #D9D9D9;
+    
   `
 
 

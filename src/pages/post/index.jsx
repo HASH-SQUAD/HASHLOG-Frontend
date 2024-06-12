@@ -57,7 +57,11 @@ const Post = () => {
       </_.Post_Layout>
       <Footer />
       {copySuccess && (
-        <_.Post_Share_Success>링크가 복사되었습니다.</_.Post_Share_Success>
+        <_.Post_Share_Success>
+          <_.Post_Share_Success_Icon>
+            {shareB}
+          </_.Post_Share_Success_Icon>
+          링크가 복사되었습니다.</_.Post_Share_Success>
       )}
     </>
   );
