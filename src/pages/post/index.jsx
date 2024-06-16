@@ -43,6 +43,7 @@ const Post = () => {
           ))}
           <_.Post_Date>{data.date}</_.Post_Date>
         </_.Post_Meta>
+        
         <_.Post_Title_Line />
         <_.Post_Img_Layout>
           <_.Post_Img src={img} />

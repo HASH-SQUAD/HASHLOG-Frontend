@@ -37,12 +37,31 @@ export const Post_Tag = styled.div`
 
 `;
 
-
 export const Post_Date = styled.div `
   color: #7A7D85;
   font-size: 1rem;
   margin-left: 5px;
 `
+
+export const Post_= styled.button `
+    border-style: none;
+    color: #12182b;
+    font-size: 0.9rem;
+    
+  `
+
+export const Post_Retouch_Button = styled.button `
+    border-style: none;
+    color: #12182b;
+    font-size: 0.9rem;
+    
+  `
+export const Post_Delete_Button = styled.button `
+    border-style: none;
+    color: #12182b;
+    font-size: 0.9rem;
+    
+  `
 export const Post_Title_Line = styled.div `
   width: 100%;
   height: 1px;
@@ -53,6 +72,8 @@ export const Post_Title_Line = styled.div `
     display: flex;
     justify-content: center;
   `
+
+
     
       export const Post_Img = styled.img `
       width: 50vw;
@@ -61,10 +82,11 @@ export const Post_Title_Line = styled.div `
       border-radius: 20px;
       display: block;
     `
+
   export const Post_Content = styled.div`
     margin-top: 4%;
     color: #12182b;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     white-space: pre-wrap;
   `

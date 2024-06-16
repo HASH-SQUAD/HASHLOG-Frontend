@@ -80,8 +80,13 @@ export const Write_WriteButton = styled.button`
   color: #fff;
   border-radius: 5px;
   border-style: none;
-
 `
+
+export const Write_BackButton = styled.img`
+  
+`
+
+
 export const Write_ViewTitle = styled.div `
   width: 90%;
   border-style: none;

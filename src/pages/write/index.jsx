@@ -10,6 +10,9 @@ const Write = () => {
   const [userName, setUserName] = useState("강민지님");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const returnPage = (e) => {
+    
+  }
   const handleTitleChange = (e) => {
     setTitle(e.currentTarget.value);
   };
@@ -67,7 +70,12 @@ const Write = () => {
             value={content}
           />
           <_.Write_FooterLayout>
-            <_.Write_Footer></_.Write_Footer>
+            <_.Write_Footer>
+              <_.Write_BackButton src={back}></_.Write_BackButton>
+              <_.Write_WriteButton>
+                글쓰기
+              </_.Write_WriteButton>
+            </_.Write_Footer>
           </_.Write_FooterLayout>
         </_.Write_Write>
         <_.Write_View>
